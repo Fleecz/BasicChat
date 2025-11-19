@@ -1,9 +1,6 @@
 package command;
 
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class CLI {
     Scanner scanner = new Scanner(System.in);
@@ -15,14 +12,16 @@ public class CLI {
         cmds.put("/test", new TestCommand(cmds));
         cmds.put("/quit", new QuitCommand(cmds));
     }
-    public CLI setRunning(boolean running) {
+    public void setRunning(boolean running) {
         this.running = running;
-        return this;
     }
     public void run(){
         while (running) {
-            String line = scanner.nextLine().trim().toLowerCase();
-            ICommand command = cmds.get(line);
+            String line = scanner.nextLine().trim();
+            String[] parts =line.split("\\s+");
+            String cmdName = parts[0].toLowerCase();
+            String[] args = Arrays.copyOfRange(parts, 1, parts.length);
+            ICommand command = cmds.get(cmdName);
             if (command != null) {
                 command.execute(this);
             }
