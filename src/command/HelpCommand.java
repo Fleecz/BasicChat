@@ -3,15 +3,15 @@ package command;
 import java.util.Map;
 
 public class HelpCommand implements ICommand {
-    private final Map<String, ICommand> helpList;
-    String name = "Help-Command";
-    String description = "Lists all commands and their description";
+    private final Map<String, ICommand> CommandList;
+    private final String name = "/help";
+    private final String description = "List all commands and their description";
     public HelpCommand(Map<String, ICommand> cmds) {
-        this.helpList=cmds;
+        this.CommandList=cmds;
     }
     @Override
-    public void execute(CLI cli) {
-        for(ICommand cmd : helpList.values()) {
+    public void execute(CLI cli, String [] args) {
+        for(ICommand cmd : CommandList.values()) {
             System.out.println(cmd.getName() +": " + cmd.getDescription());
         }
     }

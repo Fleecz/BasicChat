@@ -1,22 +1,23 @@
 package command;
 
-import userProfile.IUserProfile;
 import userProfile.UserProfile;
 import java.util.Map;
 
 public class ShowNameCommand implements ICommand{
-    String name="ShowName-Command";
-    String description="use this command to show your Userprofilename";
-    UserProfile userProfile;
+    private final String name="/showname";
+    private final String description="Show your Userprofilename";
+    private final UserProfile userProfile;
     public ShowNameCommand(Map<String, ICommand> cmds, UserProfile userProfile) {
         this.userProfile = userProfile;
     }
     @Override
-    public void execute(CLI cli) {
-        if (userProfile != null) {
+    public void execute(CLI cli, String [] args) {
+
+        if (userProfile.UserProfileName != null) {
             System.out.println("Your Username is: " + userProfile.getDisplayName());
         } else
             System.out.println("Your Username is not set");
+
     }
     @Override
     public String getName() {
