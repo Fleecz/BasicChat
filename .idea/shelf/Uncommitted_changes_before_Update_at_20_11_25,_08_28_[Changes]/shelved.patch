@@ -1,0 +1,189 @@
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1763543148296)
++++ b/.idea/.gitignore	(date 1763543148296)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: src/communication/Server.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/communication/Server.java b/src/communication/Server.java
+new file mode 100644
+--- /dev/null	(date 1763544575039)
++++ b/src/communication/Server.java	(date 1763544575039)
+@@ -0,0 +1,66 @@
++package src.communication;
++
++import java.io.*;
++import java.net.*;
++
++public class Server {
++
++    public static void main(String[] args) {
++        int port = 1312;
++
++        try (ServerSocket serverSocket = new ServerSocket(port)) {
++            System.out.println("Server läuft auf Port " + port);
++
++            // Endlosschleife: immer wieder neue Clients akzeptieren
++            while (true) {
++                Socket clientSocket = serverSocket.accept();
++                System.out.println("Neuer Client verbunden: " + clientSocket.getRemoteSocketAddress());
++
++                // Für jeden Client einen eigenen Thread starten
++                ClientHandler handler = new ClientHandler(clientSocket);
++                new Thread(handler).start();
++            }
++        } catch (IOException e) {
++            e.printStackTrace();
++        }
++    }
++
++    // Innere Klasse: kümmert sich um genau EINEN Client
++    private static class ClientHandler implements Runnable {
++        private final Socket socket;
++
++        ClientHandler(Socket socket) {
++            this.socket = socket;
++        }
++
++        @Override
++        public void run() {
++            System.out.println("Starte Handler für " + socket.getRemoteSocketAddress());
++            try (
++                    BufferedReader in = new BufferedReader(
++                            new InputStreamReader(socket.getInputStream()));
++                    PrintWriter out = new PrintWriter(socket.getOutputStream(), true)
++            ) {
++                out.println("Willkommen! Tippe 'quit' zum Beenden.");
++
++                String line;
++                while ((line = in.readLine()) != null) {
++                    if ("quit".equalsIgnoreCase(line.trim())) {
++                        out.println("Tschüss!");
++                        break;
++                    }
++                    // Echo zurücksenden
++                    out.println("Echo von Server: " + line);
++                }
++            } catch (IOException e) {
++                System.out.println("Fehler bei Client " + socket.getRemoteSocketAddress() +
++                        ": " + e.getMessage());
++            } finally {
++                try {
++                    socket.close();
++                } catch (IOException ignored) {}
++                System.out.println("Verbindung geschlossen: " + socket.getRemoteSocketAddress());
++            }
++        }
++    }
++}
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1763544388171)
++++ b/.idea/vcs.xml	(date 1763544388171)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/discord.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/discord.xml b/.idea/discord.xml
+new file mode 100644
+--- /dev/null	(date 1763544388172)
++++ b/.idea/discord.xml	(date 1763544388172)
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="DiscordProjectSettings">
++    <option name="show" value="PROJECT_FILES" />
++    <option name="description" value="" />
++    <option name="applicationTheme" value="default" />
++    <option name="iconsTheme" value="default" />
++    <option name="button1Title" value="" />
++    <option name="button1Url" value="" />
++    <option name="button2Title" value="" />
++    <option name="button2Url" value="" />
++    <option name="customApplicationId" value="" />
++  </component>
++</project>
+\ No newline at end of file
+Index: src/communication/Client.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/communication/Client.java b/src/communication/Client.java
+new file mode 100644
+--- /dev/null	(date 1763544594810)
++++ b/src/communication/Client.java	(date 1763544594810)
+@@ -0,0 +1,48 @@
++package src.communication;
++
++import java.io.*;
++import java.net.*;
++
++public class Client {
++
++    public static void main(String[] args) {
++        String host = "localhost";
++        int port = 1312;
++
++        try (
++                Socket socket = new Socket(host, port);
++                BufferedReader in = new BufferedReader(
++                        new InputStreamReader(socket.getInputStream()));
++                PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
++                BufferedReader console = new BufferedReader(
++                        new InputStreamReader(System.in))
++        ) {
++            System.out.println("Verbunden mit Server.");
++
++            // Begrüßungsnachricht vom Server lesen
++            String serverMsg = in.readLine();
++            System.out.println("Server: " + serverMsg);
++
++            String userInput;
++            while ((userInput = console.readLine()) != null) {
++                // Nachricht an Server schicken
++                out.println(userInput);
++
++                // Antwort vom Server
++                String response = in.readLine();
++                if (response == null) {
++                    System.out.println("Server hat die Verbindung beendet.");
++                    break;
++                }
++                System.out.println("Server: " + response);
++
++                if ("quit".equalsIgnoreCase(userInput.trim())) {
++                    break;
++                }
++            }
++
++        } catch (IOException e) {
++            e.printStackTrace();
++        }
++    }
++}
