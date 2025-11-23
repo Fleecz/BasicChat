@@ -1,7 +1,6 @@
-package command;
+package src.command;
 
-import userProfile.IUserProfile;
-import userProfile.UserProfile;
+import src.userProfile.UserProfile;
 import java.util.Map;
 
 public class ShowNameCommand implements ICommand{

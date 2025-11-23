@@ -1,4 +1,4 @@
-package userProfile;
+package src.userProfile;
 
 
 public class UserProfile implements IUserProfile{

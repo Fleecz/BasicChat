@@ -4,7 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6571a869-681d-436b-bf8f-3f8359044783" name="Changes" comment="placeholder will be changed later" />
+    <list default="true" id="6571a869-681d-436b-bf8f-3f8359044783" name="Changes" comment="placeholder will be changed later">
+      <change afterPath="$PROJECT_DIR$/src/communication/Host.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/communication/IChatObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/communication/ICommunication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/communication/ListenThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BasicChat/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BasicChat/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BasicChat/.idea/discord.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BasicChat/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BasicChat/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/command/CLI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/command/HelpCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/command/ICommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/command/QuitCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/command/SetNameCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/command/ShowNameCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/src/communication/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BasicChat/src/communication/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/src/communication/Network.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/src/communication/Server$ClientHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/src/communication/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/userProfile/IUserProfile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/userProfile/UserProfile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/CLI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/HelpCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/ICommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/ICommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/QuitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/QuitCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/SetNameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/SetNameCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/ShowNameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/ShowNameCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/communication/Network.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userProfile/IUserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userProfile/IUserProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/userProfile/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userProfile/UserProfile.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +49,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -46,11 +82,49 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.Client.executor": "Run",
+    "Application.ClientTester.executor": "Run",
+    "Application.HostTester.executor": "Run",
+    "Application.Main.executor": "Run",
     "Application.Server.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.Main" />
+      <module name="BasicChat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.communication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.Main" />
+      <module name="BasicChat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.communication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

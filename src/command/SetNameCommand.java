@@ -1,14 +1,14 @@
-package command;
+package src.command;
 
-import userProfile.UserProfile;
+import src.userProfile.UserProfile;
 
 import java.util.Map;
 import java.util.Scanner;
-import userProfile.*;
+import src.userProfile.*;
 
 public class SetNameCommand implements ICommand {
     Scanner scanner = new Scanner(System.in);
-    String name="Name-Command";
+    String name="setName-Command";
     String description="use this command to set your Userprofilename";
     UserProfile userProfile;
     public SetNameCommand(Map<String, ICommand> cmds, UserProfile userProfile) {
