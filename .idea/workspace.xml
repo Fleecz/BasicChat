@@ -4,41 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6571a869-681d-436b-bf8f-3f8359044783" name="Changes" comment="placeholder will be changed later">
-      <change afterPath="$PROJECT_DIR$/src/communication/Host.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/communication/IChatObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/communication/ICommunication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/communication/ListenThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6571a869-681d-436b-bf8f-3f8359044783" name="Changes" comment="network">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BasicChat/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BasicChat/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BasicChat/.idea/discord.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BasicChat/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BasicChat/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/command/CLI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/command/HelpCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/command/ICommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/command/QuitCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/command/SetNameCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/command/ShowNameCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/src/communication/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BasicChat/src/communication/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/src/communication/Network.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/src/communication/Server$ClientHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/src/communication/Server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/userProfile/IUserProfile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BasicChat/userProfile/UserProfile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/command/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/CLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/HelpCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/ICommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/ICommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/QuitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/QuitCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/ClearNameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/ClearNameCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/command/SetNameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/SetNameCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/command/ShowNameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/ShowNameCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/Network.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userProfile/IUserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userProfile/IUserProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userProfile/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userProfile/UserProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/communication/Host.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Host.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +27,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -150,11 +121,20 @@
       <option name="project" value="LOCAL" />
       <updated>1763623735982</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="network">
+      <option name="closed" value="true" />
+      <created>1763883707917</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1763883707917</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="placeholder will be changed later" />
-    <option name="LAST_COMMIT_MESSAGE" value="placeholder will be changed later" />
+    <MESSAGE value="network" />
+    <option name="LAST_COMMIT_MESSAGE" value="network" />
   </component>
 </project>

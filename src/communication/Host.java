@@ -23,7 +23,7 @@ public class Host implements ICommunication{
     @Override
     public void connect(String host, int port) throws Exception {
         serverSocket = new ServerSocket(port);
-        System.out.println("Wainting for client...");
+        System.out.println("Waiting for client...");
         client = serverSocket.accept();
         System.out.println("client connected");
 

@@ -1,10 +1,12 @@
-package command;
+package src.command;
 
-import userProfile.UserProfile;
+import src.command.CLI;
+import src.command.ICommand;
+import src.userProfile.UserProfile;
 
 import java.util.Map;
 import java.util.Scanner;
-import userProfile.*;
+import src.userProfile.*;
 
 public class SetNameCommand implements ICommand {
     private final Scanner missedInput =new Scanner(System.in);

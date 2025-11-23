@@ -56,7 +56,7 @@ public class CLI implements IChatObserver {
 
     }
     private void startCLI(){
-        System.out.print("Welcome. Type \"/help\" for a list of commands: ");
+        System.out.print("Welcome. Type \"/help\" for a list of commands: \n");
         while (running) {
             String line = scanner.nextLine().trim();
             if (line.startsWith("/")){
@@ -65,14 +65,14 @@ public class CLI implements IChatObserver {
                 String[] args = Arrays.copyOfRange(parts, 1, parts.length);
                 ICommand command = cmds.get(cmdName);
                 if (command != null) {
-                    command.execute(this);
+                    command.execute(this,args);
                 }
                 else
                     System.out.println("Unknown command");
 
             }else {
 
-                String msg = userProfile.getDisplayName() + ": " + line;
+                String msg =  userProfile.getDisplayName() + ": " + line;
 
                 network.sendMessage(msg);
             }

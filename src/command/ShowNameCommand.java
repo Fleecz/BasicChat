@@ -1,9 +1,11 @@
-package command;
+package src.command;
 
-import userProfile.UserProfile;
+import src.command.CLI;
+import src.command.ICommand;
+import src.userProfile.UserProfile;
 import java.util.Map;
 
-public class ShowNameCommand implements ICommand{
+public class ShowNameCommand implements ICommand {
     private final String name="/showname";
     private final String description="Show your Userprofilename";
     private final UserProfile userProfile;

@@ -1,10 +1,11 @@
-package command;
+package src.command;
 
-import userProfile.UserProfile;
+import src.command.ICommand;
+import src.userProfile.UserProfile;
 
 import java.util.Map;
 
-public class ClearNameCommand implements ICommand{
+public class ClearNameCommand implements ICommand {
     private final String name="/clearname";
     private final String description="Remove your Userprofilename";
     private final UserProfile userProfile;
