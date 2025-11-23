@@ -1,23 +1,27 @@
-package src.command;
+package command;
 
-import src.userProfile.UserProfile;
+import userProfile.UserProfile;
 
 import java.util.Map;
 import java.util.Scanner;
-import src.userProfile.*;
+import userProfile.*;
 
 public class SetNameCommand implements ICommand {
-    Scanner scanner = new Scanner(System.in);
-    String name="setName-Command";
-    String description="use this command to set your Userprofilename";
-    UserProfile userProfile;
+    private final Scanner missedInput =new Scanner(System.in);
+    private final String name="/setname";
+    private final String description="Set your Userprofilename";
+    private final UserProfile userProfile;
     public SetNameCommand(Map<String, ICommand> cmds, UserProfile userProfile) {
     this.userProfile = userProfile;
     }
     @Override
-    public void execute(CLI cli) {
-        System.out.println("Type in your Username");
-        userProfile.UserProfileName = scanner.nextLine();
+    public void execute(CLI cli, String [] args) {
+        if(String.join(" ", args).isEmpty()) {
+            System.out.println("Please enter a Userprofilename:");
+            userProfile.UserProfileName= missedInput.nextLine();
+        }
+        else
+            userProfile.UserProfileName = String.join(" ", args).trim();
         System.out.println("Username set to " + userProfile.UserProfileName);
     }
     @Override

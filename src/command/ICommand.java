@@ -1,7 +1,7 @@
 package src.command;
 
 public interface ICommand {
-    public void execute(CLI cli);
+    public void execute(CLI cli, String [] args);
     String getName();
     String getDescription();
 }
