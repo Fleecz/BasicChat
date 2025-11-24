@@ -1,11 +1,7 @@
 package command;
 
-import java.util.Map;
-
 public class QuitCommand implements ICommand {
-    private final String name="/quit";
-    private final String description="End the CLI";
-    public QuitCommand(Map<String, ICommand> cmds) {
+    public QuitCommand() {
     }
     @Override
     public void execute(CLI cli, String [] args) {
@@ -14,10 +10,10 @@ public class QuitCommand implements ICommand {
     }
     @Override
     public String getName() {
-        return name;
+        return "/quit";
     }
     @Override
     public String getDescription() {
-        return description;
+        return "End the CLI";
     }
 }

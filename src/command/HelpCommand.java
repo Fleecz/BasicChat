@@ -4,8 +4,7 @@ import java.util.Map;
 
 public class HelpCommand implements ICommand {
     private final Map<String, ICommand> CommandList;
-    private final String name = "/help";
-    private final String description = "List all commands and their description";
+
     public HelpCommand(Map<String, ICommand> cmds) {
         this.CommandList=cmds;
     }
@@ -18,11 +17,11 @@ public class HelpCommand implements ICommand {
 
     @Override
     public String getName() {
-        return name;
+        return "/help";
     }
 
     @Override
     public String getDescription() {
-        return description;
+        return "List all commands and their description";
     }
 }

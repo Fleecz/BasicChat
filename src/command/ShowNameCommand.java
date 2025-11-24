@@ -1,13 +1,10 @@
 package command;
 
 import userProfile.UserProfile;
-import java.util.Map;
 
 public class ShowNameCommand implements ICommand {
-    private final String name="/showname";
-    private final String description="Show your Userprofilename";
     private final UserProfile userProfile;
-    public ShowNameCommand(Map<String, ICommand> cmds, UserProfile userProfile) {
+    public ShowNameCommand(UserProfile userProfile) {
         this.userProfile = userProfile;
     }
     @Override
@@ -21,10 +18,10 @@ public class ShowNameCommand implements ICommand {
     }
     @Override
     public String getName() {
-        return name;
+        return "/showname";
     }
     @Override
     public String getDescription() {
-        return description;
+        return "Show your Userprofilename";
     }
 }

@@ -1,15 +1,13 @@
 package command;
 
 import userProfile.UserProfile;
-import java.util.Map;
+
 import java.util.Scanner;
 
 public class SetNameCommand implements ICommand {
     private final Scanner missedInput =new Scanner(System.in);
-    private final String name="/setname";
-    private final String description="Set your Userprofilename";
     private final UserProfile userProfile;
-    public SetNameCommand(Map<String, ICommand> cmds, UserProfile userProfile) {
+    public SetNameCommand(UserProfile userProfile) {
     this.userProfile = userProfile;
     }
     @Override
@@ -24,10 +22,10 @@ public class SetNameCommand implements ICommand {
     }
     @Override
     public String getName() {
-        return name;
+        return "/setname";
     }
     @Override
     public String getDescription() {
-        return description;
+        return "Set your Userprofilename";
     }
 }

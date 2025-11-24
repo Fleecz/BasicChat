@@ -69,6 +69,7 @@ public class Host implements ICommunication{
             String pwd = parts[2];
             if (userManager.validateUser(user,pwd)) {
                 out.println("You are logged in!");
+                out.println("Welcome. Type \"/help\" for a list of commands: \n");
             } else {
                 out.println("Login failed!");
             }
@@ -85,21 +86,23 @@ public class Host implements ICommunication{
             else out.println("REGISTER_FAIL");
             return;
         }
-        if (msg.equals("REGISTER_OK")) {
-            System.out.println("Registration successful.");
-            return;
-        }
-        if (msg.equals("REGISTER_FAIL")) {
-            System.out.println("Registration failed (user exists).");
-            return;
-        }
-        if (msg.equals("LOGIN_OK")) {
-            System.out.println("Login successful.");
-            return;
-        }
-        if (msg.equals("LOGIN_FAIL")) {
-            System.out.println("Login failed.");
-            return;
+        switch (msg) {
+            case "REGISTER_OK" -> {
+                System.out.println("Registration successful.");
+                return;
+            }
+            case "REGISTER_FAIL" -> {
+                System.out.println("Registration failed (user exists).");
+                return;
+            }
+            case "LOGIN_OK" -> {
+                System.out.println("Login successful.");
+                return;
+            }
+            case "LOGIN_FAIL" -> {
+                System.out.println("Login failed.");
+                return;
+            }
         }
         for (IChatObserver chatObserver : listeners){
             chatObserver.chatMessageArrived(msg);

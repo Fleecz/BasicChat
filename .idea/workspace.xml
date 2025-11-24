@@ -5,17 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6571a869-681d-436b-bf8f-3f8359044783" name="Changes" comment="network">
-      <change afterPath="$PROJECT_DIR$/src/server/usermanagement/PasswordUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/usermanagement/UserRecord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ressources/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/users.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/command/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/CLI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/ClearNameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/ClearNameCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/HelpCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/QuitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/QuitCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/command/SetNameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/SetNameCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/command/ShowNameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/ShowNameCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/communication/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/communication/Host.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Host.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/usermanagement/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/usermanagement/UserManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userProfile/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userProfile/UserProfile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,29 +53,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.Client.executor": "Run",
-    "Application.ClientTester.executor": "Run",
-    "Application.HostTester.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.Server.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "A3",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Client.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ClientTester.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HostTester.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Server.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -137,6 +137,9 @@
       <workItem from="1763977094782" duration="301000" />
       <workItem from="1763977670799" duration="3449000" />
       <workItem from="1763991576512" duration="2745000" />
+      <workItem from="1764001397737" duration="211000" />
+      <workItem from="1764002470517" duration="345000" />
+      <workItem from="1764002823444" duration="2451000" />
     </task>
     <task id="LOCAL-00001" summary="placeholder will be changed later">
       <option name="closed" value="true" />

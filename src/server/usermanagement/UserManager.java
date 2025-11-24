@@ -9,7 +9,7 @@ import java.util.*;
 public class UserManager {
     private final Map<String, UserRecord> users = new HashMap <>();
     private final ObjectMapper mapper = new ObjectMapper();
-    private final File file = new File("users.json");
+    private final File file = new File("src/users.json");
     public UserManager() {
         loadFromFile();
     }
@@ -20,7 +20,8 @@ public class UserManager {
                 return;
             }
             String json = Files.readString(file.toPath());
-            List<UserRecord> list = mapper.readValue(json, new TypeReference<List<UserRecord>>() {});
+            List<UserRecord> list = mapper.readValue(json, new TypeReference<>() {
+            });
             for (UserRecord r: list) {
                 users.put(r.username, r);
             }

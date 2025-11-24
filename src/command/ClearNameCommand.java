@@ -1,15 +1,10 @@
 package command;
 
-import command.ICommand;
 import userProfile.UserProfile;
 
-import java.util.Map;
-
 public class ClearNameCommand implements ICommand {
-    private final String name="/clearname";
-    private final String description="Remove your Userprofilename";
     private final UserProfile userProfile;
-    public ClearNameCommand(Map<String, ICommand> cmds, UserProfile userProfile) {
+    public ClearNameCommand(UserProfile userProfile) {
         this.userProfile = userProfile;
     }
     @Override
@@ -20,11 +15,11 @@ public class ClearNameCommand implements ICommand {
 
     @Override
     public String getName() {
-        return name;
+        return "/clearname";
     }
 
     @Override
     public String getDescription() {
-        return description;
+        return "Remove your Userprofilename";
     }
 }

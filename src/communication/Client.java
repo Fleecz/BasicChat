@@ -60,7 +60,6 @@ public class Client implements ICommunication{
         }
         if (msg.contains("Login")){
             System.out.println(msg);
-            return;
         }
     }
 }
