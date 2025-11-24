@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6571a869-681d-436b-bf8f-3f8359044783" name="Changes" comment="network">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/command/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/CLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/ClearNameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/ClearNameCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/SetNameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/SetNameCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/ShowNameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/ShowNameCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/Host.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Host.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +56,8 @@
     "Application.Server.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
   <component name="RunManager">

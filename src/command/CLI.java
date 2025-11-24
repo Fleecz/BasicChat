@@ -7,7 +7,7 @@ import src.communication.Client;
 import src.communication.Host;
 import src.communication.IChatObserver;
 import src.communication.ICommunication;
-import src.userProfile.*;
+import userProfile.*;
 
 public class CLI implements IChatObserver {
     Scanner scanner = new Scanner(System.in);
