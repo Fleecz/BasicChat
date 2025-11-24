@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6571a869-681d-436b-bf8f-3f8359044783" name="Changes" comment="network">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/CLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/ClearNameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/ClearNameCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/HelpCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/ICommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/ICommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/QuitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/QuitCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/SetNameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/SetNameCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/command/ShowNameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/command/ShowNameCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/Host.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/Host.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/IChatObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/IChatObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/ICommunication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/ICommunication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/communication/ListenThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/communication/ListenThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userProfile/IUserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userProfile/IUserProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/userProfile/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/userProfile/UserProfile.java" afterDir="false" />
-    </list>
+    <list default="true" id="6571a869-681d-436b-bf8f-3f8359044783" name="Changes" comment="network" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,7 +116,7 @@
       <updated>1763543143220</updated>
       <workItem from="1763975390107" duration="52000" />
       <workItem from="1763975450731" duration="13000" />
-      <workItem from="1763976567099" duration="300000" />
+      <workItem from="1763976567099" duration="523000" />
     </task>
     <task id="LOCAL-00001" summary="placeholder will be changed later">
       <option name="closed" value="true" />
