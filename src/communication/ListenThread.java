@@ -2,7 +2,6 @@ package communication;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class ListenThread extends Thread  {
     BufferedReader in;

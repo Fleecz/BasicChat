@@ -1,5 +1,3 @@
-package src;
-
 import command.CLI;
 
 public class Main {
