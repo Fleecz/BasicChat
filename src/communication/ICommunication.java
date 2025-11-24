@@ -1,4 +1,4 @@
-package src.communication;
+package communication;
 
 import java.io.IOException;
 import java.util.ArrayList;

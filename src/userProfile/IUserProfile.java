@@ -1,4 +1,4 @@
-package src.userProfile;
+package userProfile;
 
 public interface IUserProfile {
     String getDisplayName();

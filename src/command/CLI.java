@@ -1,13 +1,14 @@
-package src.command;
+package command;
 
 import java.io.IOException;
 import java.util.*;
 
-import src.communication.Client;
-import src.communication.Host;
-import src.communication.IChatObserver;
-import src.communication.ICommunication;
+import communication.Client;
+import communication.Host;
+import communication.IChatObserver;
+import communication.ICommunication;
 import userProfile.*;
+
 
 public class CLI implements IChatObserver {
     Scanner scanner = new Scanner(System.in);

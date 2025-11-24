@@ -1,6 +1,6 @@
 package src;
 
-import src.command.CLI;
+import command.CLI;
 
 public class Main {
     public static void main(String[] args) {

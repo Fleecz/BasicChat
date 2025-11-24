@@ -1,7 +1,7 @@
-package src.command;
+package command;
 
-import src.command.ICommand;
-import src.userProfile.UserProfile;
+import command.ICommand;
+import userProfile.UserProfile;
 
 import java.util.Map;
 

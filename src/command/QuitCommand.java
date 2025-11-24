@@ -1,4 +1,4 @@
-package src.command;
+package command;
 
 import java.util.Map;
 
