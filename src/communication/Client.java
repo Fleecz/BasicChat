@@ -58,5 +58,9 @@ public class Client implements ICommunication{
         for (IChatObserver chatObserver : listeners){
             chatObserver.chatMessageArrived(msg);
         }
+        if (msg.contains("Login")){
+            System.out.println(msg);
+            return;
+        }
     }
 }

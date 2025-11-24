@@ -1,7 +1,5 @@
 package command;
 
-import command.CLI;
-import command.ICommand;
 import userProfile.UserProfile;
 import java.util.Map;
 

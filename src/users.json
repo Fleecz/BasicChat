@@ -3,6 +3,6 @@
     "username": "Max",
     "passwordHash": "BASE64_HASH",
     "salt": "BASE64_SALT",
-    "role": "User",
+    "role": "User"
   }
 ]

@@ -7,8 +7,10 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
+import server.usermanagement.UserManager;
 
 public class Host implements ICommunication{
+    private UserManager userManager = new UserManager();
    ArrayList<IChatObserver> listeners = new ArrayList<>();
     ServerSocket serverSocket = null;
     Socket client = null;
@@ -61,8 +63,54 @@ public class Host implements ICommunication{
 
     @Override
     public void notify(String msg) {
+        if (msg.startsWith("/login")) {
+            String [] parts = msg.split(" ");
+            String user = parts[1];
+            String pwd = parts[2];
+            if (userManager.validateUser(user,pwd)) {
+                out.println("You are logged in!");
+            } else {
+                out.println("Login failed!");
+            }
+            return;
+        }
+        if (msg.startsWith("/register")) {
+            String[] parts = msg.split(" ");
+            String user = parts[1];
+            String pwd  = parts[2];
+
+            boolean ok = userManager.register(user, pwd);
+
+            if (ok) out.println("REGISTER_OK");
+            else out.println("REGISTER_FAIL");
+            return;
+        }
+        if (msg.equals("REGISTER_OK")) {
+            System.out.println("Registration successful.");
+            return;
+        }
+        if (msg.equals("REGISTER_FAIL")) {
+            System.out.println("Registration failed (user exists).");
+            return;
+        }
+        if (msg.equals("LOGIN_OK")) {
+            System.out.println("Login successful.");
+            return;
+        }
+        if (msg.equals("LOGIN_FAIL")) {
+            System.out.println("Login failed.");
+            return;
+        }
         for (IChatObserver chatObserver : listeners){
             chatObserver.chatMessageArrived(msg);
         }
+    }
+
+    public UserManager getUserManager() {
+        return userManager;
+    }
+
+    public void setUserManager(UserManager userManager) {
+        this.userManager = userManager;
     }
 }

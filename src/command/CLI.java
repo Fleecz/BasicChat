@@ -57,7 +57,25 @@ public class CLI implements IChatObserver {
 
     }
     private void startCLI(){
+        System.out.print("Login or Register? (l/r): ");
+        String mode = scanner.nextLine().trim();
+
+        System.out.print("Username: ");
+        String user = scanner.nextLine().trim();
+
+        System.out.print("Password: ");
+        String pwd = scanner.nextLine().trim();
+
+        if (mode.equalsIgnoreCase("r")) {
+            network.sendMessage("/register " + user + " " + pwd);
+        }
+        network.sendMessage("/login " + user + " " + pwd);
         System.out.print("Welcome. Type \"/help\" for a list of commands: \n");
+        System.out.print("Username: ");
+        String userName = scanner.nextLine();
+        System.out.print("Password: ");
+        String password = scanner.nextLine();
+        network.sendMessage("/login "+userName+" "+password);
         while (running) {
             String line = scanner.nextLine().trim();
             if (line.startsWith("/")){
